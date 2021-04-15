@@ -9,5 +9,10 @@ def num(str1, str2):
     print(str1.count(str2))
 
 
+def sort(str1):
+    #字符串切片方式实现反向输出
+    print(str1[::-1])
+
+
 if __name__ == '__main__':
-    num('i, am, iron man', 'a')
+    sort('i, am, iron man')
