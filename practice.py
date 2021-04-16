@@ -25,5 +25,11 @@ def ra(n, nums):
     print(set(list_num))
 
 
+def sub_str(str1, str_sub):
+    # 求出自字符串的数量，输入两个字符串
+    sub_num = str1.count(str_sub)
+    print(sub_num)
+
+
 if __name__ == '__main__':
-    ra(1000, 1000)
+    sub_str('1000', '0')
