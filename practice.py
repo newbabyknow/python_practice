@@ -38,5 +38,11 @@ def cut_by_length(ori_str):
     print(list_result)
 
 
+def get_similar(num):
+    # 四舍五入，取近似值，参数：long型或int型数字
+    result = int(num + 0.5)
+    print(result)
+
+
 if __name__ == '__main__':
-    cut_by_length('1000 dfsg dfgdfgh')
+    get_similar(4.6)
