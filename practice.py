@@ -1,4 +1,5 @@
 import random
+import re
 
 
 def last_len(str1):
@@ -26,5 +27,16 @@ def sub_str(str1, str_sub):
     print(sub_num)
 
 
+def cut_by_length(ori_str):
+    # 按照固定长度分割字符串，最后一个补全，参数：一个字符串
+    list_result = re.findall(r'.{5}', ori_str)
+    last_str = len(ori_str) % 5
+    last_str_re = ori_str[-last_str:]
+    for i in range(5 - last_str):
+        last_str_re += '0'
+    list_result.append(last_str_re)
+    print(list_result)
+
+
 if __name__ == '__main__':
-    sub_str('1000', '0')
+    cut_by_length('1000 dfsg dfgdfgh')
