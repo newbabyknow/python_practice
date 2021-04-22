@@ -22,7 +22,7 @@ def ra(n, nums):
 
 
 def sub_str(str1, str_sub):
-    # 求出自字符串的数量，输入两个字符串
+    # 求出子字符串的数量，输入两个字符串
     sub_num = str1.count(str_sub)
     print(sub_num)
 
@@ -45,4 +45,4 @@ def get_similar(num):
 
 
 if __name__ == '__main__':
-    get_similar(4.6)
+    sub_str('abcccdc', 'c')
