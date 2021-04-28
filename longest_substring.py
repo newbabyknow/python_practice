@@ -7,12 +7,12 @@ def window(s):
     for i in range(1, len(s)):
         if s[i] in s[begin_index:i]:
             max_long = max(max_long, len(s[begin_index:i]))
-            begin_index = s.index(s[i]) + 1
+            begin_index += s[begin_index:i].index(s[i]) + 1
     if max_long == 0:
         max_long = len(s)
     return max_long
 
 
 if __name__ == '__main__':
-    a = window('abccdc')
+    a = window('abcaaaabcdfcdc')
     print(a)
